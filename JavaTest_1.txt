@@ -1,0 +1,136 @@
+Q1.What is the difference between Compiler and Interpreter?
+
+Ans: Compiler: It is the software while takes the Sourcecode(High Level Language) as the input and generates  Machine Level Language(MLL) Code as the output.To convert the HLL code to MLL code will scan the HLL code Only once.Compiler is speed up the process.
+
+Interpreter:It is the software while takes the Sourcecode(High Level Language) as the input and generates  Machine Level Language(MLL) Code as the output.To convert the HLL code to MLL code will scan the HLL code multiple times(Line By Line).Intrpretter will slow down the
+process.
+
+Q2.What is the difference between JDK, JRE, and JVM?
+
+Ans: JVM
+    =====
+	JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a 	runtime environment in which Java bytecode can be executed. It can also run those programs which are written in other languages and compiled to Java bytecode.
+
+	JVMs are available for many hardware and software platforms. JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from 	each other. However, Java is platform independent. There are three notions of the JVM: specification, implementation, and instance.
+	The JVM performs the following main tasks:
+
+		Loads code
+		Verifies code
+		Executes code
+		Provides runtime environment
+
+    JRE
+   =====
+	JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for 	developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of 	libraries + other files that JVM uses at runtime.
+
+	The implementation of JVM is also actively released by other companies besides Sun Micro Systems.
+
+    JDK
+   =====
+	JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and 	applets. It physically exists. It contains JRE + development tools.
+
+	JDK is an implementation of any one of the below given Java Platforms released by Oracle Corporation:
+
+		Standard Edition Java Platform
+		Enterprise Edition Java Platform
+		Micro Edition Java Platform
+
+	The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a 		documentation generator (Javadoc), etc. to complete the development of a Java Application.
+
+
+Q3.How many types of memory areas are allocated by JVM?
+Ans: Five types of memory allocated by the JVM:
+	1.Class(Method) Area
+	2.Heap
+	3.Stack
+	4.Program Counter Register
+	5.Native Method Stack
+
+
+Q4.What is JIT compiler?
+Ans: JIT means Just-In-Time Compiler.The Just-In-Time (JIT) compiler is a component of the runtime environment that improves the performance of Java™ applications by compiling bytecodes to native machine code at run time.
+
+
+Q5.What are the various access specifiers in Java?
+Ans: In java there are four types of access specifiers:
+	1.Public
+	2.Private
+	3.Protected
+	4.Default
+
+
+Q6.What is a compiler in Java?
+Ans: Compiler is a software which takes the Sourcecode(High Level Language) as the Input and generates the Machine Level Code(MLL) as the Output. OR A Java compiler is a program that takes the text file work of a developer and compiles it into a platform-independent Java file.
+To convert the HLL code to MLL code will scan the HLL code Only once.
+
+
+Q7.Explain the types of variables in Java?
+Ans: There are Three Type of variables in java
+	1.Local variables:
+		A variable declared inside the body of the method is called the Local variable. You can use this varibles only within that method and the other methods 		in the class aren't even aware that the variable exists. A Local variable can not be defined with the "static" keyword.
+
+	2.Instance variables:
+		A varible declared inside the class but outside the method, is called as the instance varible. it is not declared as the static. it is called instance 		variable because its value is instance-specific and is not shared among instances.
+		
+	3.Static variables:
+		A variable that is declared as the static is called the static variable.it cannot be local. You can create the single copy of the static variable and share it among all the instances of the class. Memory allocation for the static variables happens only once when the class is loaded in the memory.
+		
+
+Q8.What are the Datatypes in Java?
+Ans: There are Eight primitive datatypes supported by the java programming are:
+	1.byte
+	2.int
+	3.short
+	4.long
+	5.float
+	6.double
+	7.boolean
+	8.char
+
+
+Q9.What are the identifiers in java?
+Ans: Identifier is a name in java program it can be classnamee, methodname, variablename, lablename.
+eg:
+class Test
+{
+	public static void main(String []args)
+	{
+		int x=10;
+	}
+}
+Identifiers:
+===========
+Test: className
+mian: methodName
+String: className
+args: variableName
+x: variableName
+
+
+
+Q10.Explain the architecture of JVM 
+Ans: JVM is the engine that drives the Java Code. It converts Java bytecode into machine language. JVM architecture in Java contains classloader, memory area, execution engine, etc.
+
+Classloader − Loads the class file into the JVM.
+
+Class Area − Storage areas for a class elements structure like fields, method data, code of method etc.
+
+Heap − Runtime storage allocation for objects.
+
+Stack − Storage for local variables and partial results. A stack contains frames and allocates one for each thread. Once a thread gets completed, this frame also gets destroyed. It also plays roles in method invocation and returns.
+
+PC Registers − Program Counter Registers contains the address of an instruction that JVM is currently executing.
+
+Execution Engine − It has a virtual processor, interpreter to interpret bytecode instructions one by one and a JIT, just in time compiler.
+
+Native method stack − It contains all the native methods used by the application.
+
+
+
+
+
+
+
+
+
+
